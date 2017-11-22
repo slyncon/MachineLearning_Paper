@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Sep 24 14:48:24 2017
-@author: Caio Vinicius, Lyncon Rodrigo, Felipe Vieira
+@author: Lyncon Rodrigo, Caio Vinicius, Felipe Vieira
 """
 
 # Simple Linear Regression
