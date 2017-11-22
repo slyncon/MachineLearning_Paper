@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Sep 24 14:48:24 2017
-@author: Caio Vinicius, Lyncon Rodrigo, Felipe Vieira, Yuri Cesar, Phillipe Wagner
-Roberto Henrique, Jack Leal
+@author: Caio Vinicius, Lyncon Rodrigo, Felipe Vieira
 """
 
 # Simple Linear Regression
