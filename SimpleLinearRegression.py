@@ -12,32 +12,32 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# Importar os datasets
+# Importing the datasets
 
-dataset = pd.read_csv('cursoxanosexp.csv')
-# variavel independente 
+dataset = pd.read_csv('classesxexperience.csv')
+# independent variable 
 X = dataset.iloc[:, :-1].values
-# virgula para pegar todas as colunas
-# -1 exceto a ultima coluna
+# comma to get all the columns
+# -1 except for the last column
 
-# variavel dependente 
+# dependent variable
 y = dataset.iloc[:, 1].values
-# dados preparados
+# data formatted
 
-# Dividir o dataset em Training set e Test set
+# Split the dataset in Training set e Test set
 
 from sklearn.cross_validation import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 1/3, random_state = 0)
 
-# Prepara Simples Regressão Linear para o Training set
+# Prepare Simple Linear Regression for the Training Set
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X_train, y_train)
 
-# Prever os resultados do Test set
+# Preview the results from the testing set
 y_pred = regressor.predict(X_test)
 
-# Visualizar os resultados do Training set
+# Visualize training set
 
 plt.scatter(X_train, y_train, color = 'red')
 plt.plot(X_train,regressor.predict(X_train), color = 'blue')
@@ -46,7 +46,7 @@ plt.xlabel('Meses de Curso')
 plt.ylabel('Meses de Experiencia')
 plt.show()
 
-# Visualizar os resultados do Test set
+# Visualize results from Test set
 
 plt.scatter(X_test, y_test, color = 'red')
 plt.plot(X_train,regressor.predict(X_train), color = 'purple')
